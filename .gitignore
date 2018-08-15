@@ -1,0 +1,13 @@
+# Ignore data.
+/data
+/data-processing/input
+/data-processing/output
+
+# Ignore images.
+/images
+
+# Ignore map data.
+/gramercy-charts
+
+# Ignore virtual environments.
+/data-processing/venv

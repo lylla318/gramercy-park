@@ -1,0 +1,127 @@
+@font-face {
+    font-family: MarkPro;
+    src: url("fonts/MarkPro.otf");
+}
+
+@font-face {
+    font-family: MarkPro;
+    src: url("fonts/MarkPro-Bold.otf");
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: "GT-America";
+    src: url('fonts/GT-America-Mono-Light-v1.otf')
+}
+
+
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-grid-thirds .col {
+  width: 25%;
+}
+
+@media (max-width: 400px) {
+  .flex-grid,
+  .flex-grid-thirds {
+    display: block;
+    .col {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+}
+.flex-grid { 
+  margin: 0 0 20px 0;
+}
+.col {
+  /*background: salmon;*/
+  padding: 20px;
+}
+
+.grid path.domain {
+  stroke: #ddd;
+}
+
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+.chart {
+  margin:200px;
+}
+
+.map {
+  margin-top:10px;
+  margin-left:10px;
+}
+
+.d3-tip {
+  line-height: 1.4;
+  padding: 12px;
+  /*background: rgba(0, 0, 0, 0.8);*/
+  background: rgba(255,255,255, 0.9);
+  color: #36454f;
+  border-radius: 2px;
+  border: solid 1px #36454f ;
+  font-size:12px;
+  /*font-family:sans-serif;*/
+  font-family: GT-America;
+  font-weight: bold;
+  text-transform: uppercase;
+  max-width:300px !important;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-family: sans-serif;
+  font-size: 5px;
+  max-width:200px !important;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  top: 100%;
+  left: 45%;
+}
+
+.tip-label {
+  font-weight:bold;
+}
+
+path#building {
+  cursor:pointer;
+}
+
+
+
+#saveButton {
+  width:20px;
+  height:20px;
+  background:#000;
+  cursor:pointer;
+  margin-left:20%;
+}
+
